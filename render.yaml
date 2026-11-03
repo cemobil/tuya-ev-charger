@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tuya-ev-charger
+    env: python
+    buildCommand: ""
+    startCommand: "python -u app.py"
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000
